@@ -31,8 +31,7 @@ rsync_sources=( dotfiles extras )
 for src in "${rsync_sources[@]}"
 do
   :
-  rsync --exclude-from .rsyncignore \
-    -avh --no-perms $src/ ~
+  [[ -d $src ]] && rsync --exclude-from .rsyncignore -avh --no-perms $src/ ~
 done
 
 [ -f extras.sh ] || source extras.sh
