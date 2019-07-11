@@ -27,11 +27,13 @@ brew 'itermocil'
 
 cask_args appdir: '/Applications'
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 
 cask 'adobe-creative-cloud'
 cask 'cyberduck'
 cask 'dash'
 cask 'docker'
+cask 'firefox-developer-edition'
 cask 'fork'
 cask 'google-chrome'
 cask 'iterm2'
