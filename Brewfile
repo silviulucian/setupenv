@@ -59,7 +59,6 @@ cask 'quicklook-json' # Preview json jiles
 brew 'mas'
 mas '1Password', id: 1333542190
 mas 'Keynote', id: 409183694
-mas 'Magnet', id: 441258766
 mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
