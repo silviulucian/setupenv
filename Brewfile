@@ -62,6 +62,7 @@ cask 'quicklook-json' # Preview json jiles
 
 brew 'mas'
 mas '1Password', id: 1333542190
+mas 'Ambiance', id: 543361303
 mas 'Keynote', id: 409183694
 mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Ambiance', id: 543361303
