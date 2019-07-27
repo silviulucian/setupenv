@@ -64,6 +64,7 @@ brew 'mas'
 mas '1Password', id: 1333542190
 mas 'Keynote', id: 409183694
 mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'Ambiance', id: 543361303
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
