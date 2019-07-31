@@ -17,9 +17,9 @@ xcode-select --install
 
 brew bundle # Install apps from Brewfile
 
-curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
-
-open -a '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
+# Postgres
+createuser -s postgres # dropuser postgres to remove
+brew services start postgres #
 
 # Powerline fonts
 git clone https://github.com/powerline/fonts.git --depth=1
@@ -29,6 +29,10 @@ cd .. && rm -rf fonts
 # Make Fish the default shell
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 chsh -s `which fish`
+
+# Misc
+curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
+open -a '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
 
 
 #
