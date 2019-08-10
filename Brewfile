@@ -23,6 +23,9 @@ brew 'vim'
 brew 'wget'
 brew 'zlib'
 
+tap 'heroku/brew'
+brew 'heroku'
+
 tap 'TomAnthony/brews'
 brew 'itermocil'
 
