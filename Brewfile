@@ -55,7 +55,6 @@ cask 'slack'
 cask 'sublime-text'
 cask 'transmission'
 cask 'vlc'
-cask 'vmware-fusion'
 cask 'yt-music'
 cask 'zoomus'
 
