@@ -1,4 +1,5 @@
 .git/
+.githooks/
 dotfiles/
 extras/
 macos/

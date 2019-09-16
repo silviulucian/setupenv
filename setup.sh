@@ -34,7 +34,7 @@ do
   [[ -d $src ]] && rsync --exclude-from .rsyncignore -avh --no-perms $src/ ~
 done
 
-[ -f extras.sh ] || source extras.sh
+[ -f extras/extras.sh ] || source extras/extras.sh
 
 
 #

@@ -1,6 +1,6 @@
 ### Project ###
 dotfiles/
-extras/*
+extras/
 extras-placeholder.sh
 extras.sh
 
