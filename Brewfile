@@ -38,7 +38,6 @@ cask 'captain'
 cask 'cyberduck'
 cask 'dash'
 cask 'docker'
-cask 'figma'
 cask 'firefox-developer-edition'
 cask 'gitkraken'
 cask 'google-chrome'
@@ -50,7 +49,6 @@ cask 'kitematic'
 cask 'microsoft-teams'
 cask 'parallels'
 cask 'paw'
-cask 'postman'
 cask 'skype'
 cask 'slack'
 cask 'sublime-text'
@@ -70,7 +68,6 @@ mas '1Password', id: 1333542190
 mas 'Ambiance', id: 543361303
 mas 'Keynote', id: 409183694
 mas 'Microsoft Remote Desktop', id: 1295203466
-mas 'Ambiance', id: 543361303
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
