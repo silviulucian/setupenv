@@ -12,19 +12,15 @@ brew 'gnupg'
 brew 'libtool'
 brew 'mysql'
 brew 'openssl'
-brew 'pandoc'
 brew 'pkg-config'
-brew 'postgres'
 brew 'readline'
 brew 'rsync'
 brew 'terraform'
 brew 'tree'
+brew 'ncdu'
 brew 'vim'
 brew 'wget'
 brew 'zlib'
-
-tap 'heroku/brew'
-brew 'heroku'
 
 tap 'TomAnthony/brews'
 brew 'itermocil'
@@ -54,7 +50,6 @@ cask 'slack'
 cask 'sublime-text'
 cask 'transmission'
 cask 'vlc'
-cask 'yt-music'
 cask 'zoomus'
 
 cask 'qlcolorcode' # Enable syntax highlighting in source files
@@ -66,10 +61,7 @@ cask 'quicklook-json' # Preview json jiles
 brew 'mas'
 mas '1Password', id: 1333542190
 mas 'Ambiance', id: 543361303
-mas 'GarageBand', id: 682658836
-mas 'iMovie', id: 408981434
 mas 'Keynote', id: 409183694
-mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353

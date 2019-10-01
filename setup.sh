@@ -3,10 +3,24 @@
 # cd into this script's dir
 cd "$(dirname "${BASH_SOURCE}")"
 
+#
+# OS-specific setup
+###############################################################################
+
+FIRST_TIME=false
+if ! [ -f ~/setupenv.lock ]; then
+  FIRST_TIME=true
+  [[ "$OSTYPE" == "darwin"* ]] && source macos/setup.sh
+  touch ~/setupenv.lock
+fi
+
 
 #
-# Update repos
+# Sync dotfiles
 ###############################################################################
+
+# 
+# Update repos
 
 public_repos=( dotfiles )
 for pub in "${public_repos[@]}"
@@ -19,13 +33,10 @@ do
   cd ..
 done
 
-# Update self
-git pull origin master
-
+git pull origin master # Update self
 
 #
-# Setup files
-###############################################################################
+# Sync
 
 rsync_sources=( dotfiles extras )
 for src in "${rsync_sources[@]}"
@@ -34,14 +45,20 @@ do
   [[ -d $src ]] && rsync --exclude-from .rsyncignore -avh --no-perms $src/ ~
 done
 
-[ -f extras/extras.sh ] || source extras/extras.sh
-
-
 #
-# OS-specific setup
-###############################################################################
+# Extras
 
-if ! [ -f ~/setupenv.lock ]; then
-  [[ "$OSTYPE" == "darwin"* ]] && source macos/setup.sh
-  touch ~/setupenv.lock
-fi
+# Create home bin dir
+
+[[ -d ~/bin ]] || mkdir ~/bin
+
+# Fix SSH permissions
+
+chmod 400 ~/.ssh/*
+chmod 600 ~/.ssh/config ~/.ssh/known_hosts
+
+
+# 
+# Finished
+
+[[ $FIRST_TIME ]] || echo "You may need to restart for some changes to take effect."
