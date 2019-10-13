@@ -32,8 +32,8 @@ cask 'captain'
 cask 'cyberduck'
 cask 'dash'
 cask 'docker'
-cask 'firefox-developer-edition'
 cask 'google-chrome'
+cask 'insomnia'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'kaleidoscope'
@@ -42,7 +42,6 @@ cask 'kitematic'
 cask 'microsoft-teams'
 cask 'notion'
 cask 'parallels'
-cask 'paw'
 cask 'skype'
 cask 'slack'
 cask 'sublime-text'
@@ -55,6 +54,9 @@ cask 'qlmarkdown' # Preview Markdown files
 cask 'qlprettypatch' # diff/patch files
 cask 'qlstephen' # Preview plain text files without extension
 cask 'quicklook-json' # Preview json jiles
+
+tap 'homebrew/cask-versions'
+cask 'firefox-developer-edition'
 
 brew 'mas'
 mas '1Password', id: 1333542190

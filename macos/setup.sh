@@ -31,7 +31,7 @@ brew bundle # Install apps from Brewfile
 #
 # Install Node.js + packages
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"
 export PATH="$NVM_DIR/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
