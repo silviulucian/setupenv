@@ -50,12 +50,6 @@ cask 'transmit'
 cask 'vlc'
 cask 'zoomus'
 
-cask 'qlcolorcode' # Enable syntax highlighting in source files
-cask 'qlmarkdown' # Preview Markdown files
-cask 'qlprettypatch' # diff/patch files
-cask 'qlstephen' # Preview plain text files without extension
-cask 'quicklook-json' # Preview json jiles
-
 tap 'homebrew/cask-versions'
 cask 'firefox-developer-edition'
 
