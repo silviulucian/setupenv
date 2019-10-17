@@ -10,7 +10,6 @@ brew 'git'
 brew 'git-lfs'
 brew 'gnupg'
 brew 'libtool'
-brew 'mysql'
 brew 'openssl'
 brew 'pkg-config'
 brew 'readline'
@@ -60,3 +59,4 @@ mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
+mas 'Notability', id: 736189492
