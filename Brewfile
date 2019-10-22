@@ -60,3 +60,4 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
 mas 'Notability', id: 736189492
+mas 'MCG', id: 799178412

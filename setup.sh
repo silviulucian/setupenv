@@ -19,7 +19,7 @@ fi
 # Sync dotfiles
 ###############################################################################
 
-# 
+#
 # Update repos
 
 public_repos=( dotfiles )
@@ -58,7 +58,7 @@ chmod 400 ~/.ssh/*
 chmod 600 ~/.ssh/config ~/.ssh/known_hosts
 
 
-# 
+#
 # Finished
 
 [[ $FIRST_TIME ]] || echo "You may need to restart for some changes to take effect."
