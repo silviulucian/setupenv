@@ -11,9 +11,9 @@ Brewfile
 CONTRIBUTING*
 ehthumbs.db
 ehthumbs_vista.db
-extras-placeholder.sh
-extras.sh
+imac.sh
 LICENSE*
+macbook.sh
 README*
 setup.sh
 Thumbs.db

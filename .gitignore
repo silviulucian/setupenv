@@ -1,8 +1,8 @@
 ### Project ###
 dotfiles/
 extras/
-extras-placeholder.sh
-extras.sh
+!dotfiles/.gitkeep
+!extras/.gitkeep
 
 ### Linux ###
 *~
