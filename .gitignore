@@ -1,8 +1,6 @@
 ### Project ###
-dotfiles/
-extras/
-!dotfiles/.gitkeep
-!extras/.gitkeep
+dotfiles/*
+secrets/*
 
 ### Linux ###
 *~

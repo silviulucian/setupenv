@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
 #
 # Setup symlinks
 ###############################################################################
 
-ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/iCloud"
+[[ ! -e "$HOME/iCloud" ]] && ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/" "$HOME/iCloud"
 
 
 #
@@ -163,3 +170,11 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
   General -bool true \
   OpenWith -bool true \
   Privileges -bool true
+
+
+#
+# Restart Finder and Dock
+###############################################################################
+
+killall -KILL Finder
+killall -KILL Dock
