@@ -6,7 +6,7 @@ secrets/
 .DS_Store
 .gitkeep
 .LSOverride
-.rsyncexclude
+.rsyncignore
 Brewfile*
 CONTRIBUTING*
 ehthumbs.db
