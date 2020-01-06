@@ -20,7 +20,6 @@ brew 'itermocil'
 cask_args appdir: '/Applications'
 
 cask 'dash'
-cask 'figma'
 cask 'insomnia'
 cask 'iterm2'
 cask 'kaleidoscope'
