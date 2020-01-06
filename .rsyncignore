@@ -13,6 +13,7 @@ ehthumbs.db
 ehthumbs_vista.db
 LICENSE*
 README*
+secrets.sh
 settings.sh
 setup.sh
 Thumbs.db

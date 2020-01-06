@@ -77,7 +77,18 @@ if [[ "$ARG" == "dev" ]]; then
   fi
 
   yarn global upgrade
-  yarn global add git-run create-react-app gatsby-cli serverless
+
+  # Install Composer and packages
+  if [[ ! -f /usr/local/bin/composer ]]; then
+    curl -sS https://getcomposer.org/installer | php
+    mv composer.phar /usr/local/bin/composer
+  fi
+
+  composer global require \
+    laravel/installer \
+    laravel/vapor-cli
+
+  composer global upgrade
 
   # Install Powerline fonts
   if [[ ! -f "$HOME/Library/Fonts/Ubuntu Mono derivative Powerline.ttf" ]]; then
