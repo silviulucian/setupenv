@@ -5,8 +5,6 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
   exit 1
 fi
 
-ARG=${1:-base}
-
 # cd into this script's dir
 cd "$(dirname "${BASH_SOURCE}")"
 
@@ -56,80 +54,81 @@ brew bundle --file=Brewfile-base
 # Install dev apps
 ###############################################################################
 
-if [[ "$ARG" == "dev" ]]; then
-  brew bundle --file=Brewfile-dev
+brew bundle --file=Brewfile-dev
 
-  # Install NVM, Node.js and packages
-  if [[ ! -d "$HOME/.nvm" ]]; then
-    echo "Installing NVM and Node.js"
+# Install NVM, Node.js and packages
+if [[ ! -d "$HOME/.nvm" ]]; then
+  echo "Installing NVM and Node.js"
 
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 
-    export NVM_DIR="$HOME/.nvm"
-    export PATH="$NVM_DIR/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-    [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+  export NVM_DIR="$HOME/.nvm"
+  export PATH="$NVM_DIR/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+  [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 
-    nvm install 12
-    nvm alias default 12
-    curl -o- -L https://yarnpkg.com/install.sh | bash
-  else
-    echo "NVM and Node.js installed"
-  fi
-
-  yarn global upgrade
-
-  # Install Composer and packages
-  if [[ ! -f /usr/local/bin/composer ]]; then
-    curl -sS https://getcomposer.org/installer | php
-    mv composer.phar /usr/local/bin/composer
-  fi
-
-  composer global require \
-    laravel/installer \
-    laravel/vapor-cli
-
-  composer global upgrade
-
-  # Install Powerline fonts
-  if [[ ! -f "$HOME/Library/Fonts/Ubuntu Mono derivative Powerline.ttf" ]]; then
-    echo "Installing Powerline fonts"
-
-    git clone https://github.com/powerline/fonts.git --depth=1
-    cd fonts
-    ./install.sh
-    cd ..
-    rm -rf fonts
-  else
-    echo "Powerline fonts installed"
-  fi
-
-  # Make Fish the default shell
-  if ! grep -q "fish" "/etc/shells"; then
-    echo "Making Fish the default shell"
-
-    echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-    chsh -s `which fish`
-  else
-    echo "Fish is already the default shell"
-  fi
-
-  # Sync dotfiles and secrets
-  repos=( dotfiles secrets )
-  for repo in "${repos[@]}"
-  do
-    :
-    repo_dir="./$repo"
-    [[ ! -d $repo_dir ]] && git clone "git@github.com:silviulucian/$repo.git"
-    cd $repo_dir
-    git pull origin master
-    cd ..
-    rsync --exclude-from .rsyncignore -avh --no-perms $repo_dir/ ~
-  done
-
-  # Fix SSH permissions
-  chmod 400 ~/.ssh/*
-  chmod 600 ~/.ssh/config ~/.ssh/known_hosts
+  nvm install 12
+  nvm alias default 12
+  curl -o- -L https://yarnpkg.com/install.sh | bash
+else
+  echo "NVM and Node.js installed"
 fi
+
+yarn global upgrade
+
+# Install Composer and packages
+if [[ ! -f /usr/local/bin/composer ]]; then
+  echo "Installing Compower"
+  curl -sS https://getcomposer.org/installer | php
+  mv composer.phar /usr/local/bin/composer
+else
+  echo "Composer installed"
+fi
+
+composer global require \
+  laravel/installer \
+  laravel/vapor-cli
+
+composer global upgrade
+
+# Install Powerline fonts
+if [[ ! -f "$HOME/Library/Fonts/Ubuntu Mono derivative Powerline.ttf" ]]; then
+  echo "Installing Powerline fonts"
+
+  git clone https://github.com/powerline/fonts.git --depth=1
+  cd fonts
+  ./install.sh
+  cd ..
+  rm -rf fonts
+else
+  echo "Powerline fonts installed"
+fi
+
+# Make Fish the default shell
+if ! grep -q "fish" "/etc/shells"; then
+  echo "Making Fish the default shell"
+
+  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+  chsh -s `which fish`
+else
+  echo "Fish is already the default shell"
+fi
+
+# Sync dotfiles and secrets
+repos=( dotfiles secrets )
+for repo in "${repos[@]}"
+do
+  :
+  repo_dir="./$repo"
+  [[ ! -d $repo_dir ]] && git clone "git@github.com:silviulucian/$repo.git"
+  cd $repo_dir
+  git pull origin master
+  cd ..
+  rsync --exclude-from .rsyncignore -avh --no-perms $repo_dir/ ~
+done
+
+# Fix SSH permissions
+chmod 400 ~/.ssh/*
+chmod 600 ~/.ssh/config ~/.ssh/known_hosts
 
 
 #
