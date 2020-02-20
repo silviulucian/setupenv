@@ -4,6 +4,7 @@
       "adobe-creative-cloud": {
         "version": "latest",
         "options": {
+          "full_name": "adobe-creative-cloud",
           "args": {
             "appdir": "/Applications"
           }
@@ -18,7 +19,7 @@
         }
       },
       "clickup": {
-        "version": "2.0.4",
+        "version": "2.0.5",
         "options": {
           "args": {
             "appdir": "/Applications"
@@ -28,6 +29,7 @@
       "fontbase": {
         "version": "2.10.3",
         "options": {
+          "full_name": "fontbase",
           "args": {
             "appdir": "/Applications"
           }
@@ -36,6 +38,7 @@
       "google-chrome": {
         "version": "78.0.3904.108",
         "options": {
+          "full_name": "google-chrome",
           "args": {
             "appdir": "/Applications"
           }
@@ -44,6 +47,7 @@
       "keyboard-maestro": {
         "version": "9.0.4",
         "options": {
+          "full_name": "keyboard-maestro",
           "args": {
             "appdir": "/Applications"
           }
@@ -52,6 +56,7 @@
       "skype": {
         "version": "8.54.0.91",
         "options": {
+          "full_name": "skype",
           "args": {
             "appdir": "/Applications"
           }
@@ -60,6 +65,7 @@
       "slack": {
         "version": "4.1.2",
         "options": {
+          "full_name": "slack",
           "args": {
             "appdir": "/Applications"
           }
@@ -68,6 +74,7 @@
       "transmission": {
         "version": "2.94",
         "options": {
+          "full_name": "transmission",
           "args": {
             "appdir": "/Applications"
           }
@@ -76,6 +83,7 @@
       "vlc": {
         "version": "3.0.8",
         "options": {
+          "full_name": "vlc",
           "args": {
             "appdir": "/Applications"
           }
@@ -84,6 +92,7 @@
       "zoomus": {
         "version": "4.5.5757.1110",
         "options": {
+          "full_name": "zoomus",
           "args": {
             "appdir": "/Applications"
           }
@@ -92,6 +101,15 @@
       "dropbox": {
         "version": "latest",
         "options": {
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "google-drive-file-stream": {
+        "version": "latest",
+        "options": {
+          "full_name": "google-drive-file-stream",
           "args": {
             "appdir": "/Applications"
           }
@@ -152,12 +170,12 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.2",
+        "HOMEBREW_VERSION": "2.2.6",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "45c22ebc4e5c4d1beeb1e7329eccd067541cc8cc",
-        "CLT": "11.0.33.16",
+        "Homebrew/homebrew-core": "b50ad3f08f97daedd394171d0399e5382e528677",
+        "CLT": "11.3.1.0.1.1576735732",
         "Xcode": "11.3",
-        "macOS": "10.15.2"
+        "macOS": "10.15.3"
       }
     }
   }

@@ -1,9 +1,6 @@
 cask_args appdir: '/Applications'
 
 cask 'adobe-creative-cloud'
-cask 'anydesk'
-cask 'clickup'
-cask 'dropbox'
 cask 'fontbase'
 cask 'google-chrome'
 cask 'google-drive-file-stream'
@@ -13,14 +10,12 @@ cask 'slack'
 cask 'transmission'
 cask 'vlc'
 cask 'zoomus'
-cask 'zoomus'
 
 brew 'mas'
 
 mas '1Password', id: 1333542190
 mas 'Amphetamine', id: 937984704
 mas 'Keynote', id: 409183694
-mas 'Notability', id: 736189492
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
