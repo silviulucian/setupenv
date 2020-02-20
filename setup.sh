@@ -14,7 +14,7 @@ git pull origin master
 
 #
 # Install Xcode tools
-###############################################################################
+#------------------------------------------------------------------------------
 
 check=$((xcode-\select --install) 2>&1)
 str="xcode-select: note: install requested for command line developer tools"
@@ -30,7 +30,7 @@ echo "Xcode tools installed"
 
 #
 # Install Homebrew
-###############################################################################
+#------------------------------------------------------------------------------
 
 if [[ ! -x "$(command -v brew)" ]]; then
   echo "Installing Homebrew"
@@ -44,7 +44,7 @@ fi
 
 #
 # Install base set of apps
-###############################################################################
+#------------------------------------------------------------------------------
 
 brew bundle --file=Brewfile-base
 [[ ! -d "/Applications/Adobe Creative Cloud" ]] && open -a "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
@@ -52,7 +52,7 @@ brew bundle --file=Brewfile-base
 
 #
 # Install dev apps
-###############################################################################
+#------------------------------------------------------------------------------
 
 brew bundle --file=Brewfile-dev
 
@@ -73,11 +73,13 @@ else
   echo "NVM and Node.js installed"
 fi
 
+yarn global add @vue/cli json-server hasura-cli
+
 yarn global upgrade
 
 # Install Composer and packages
 if [[ ! -f /usr/local/bin/composer ]]; then
-  echo "Installing Compower"
+  echo "Installing Composer"
   curl -sS https://getcomposer.org/installer | php
   mv composer.phar /usr/local/bin/composer
 else
@@ -133,7 +135,7 @@ chmod 600 ~/.ssh/config ~/.ssh/known_hosts
 
 #
 # Change settings
-###############################################################################
+#------------------------------------------------------------------------------
 
 if [[ ! -f ~/settings.lock ]]; then
   echo "Changing settings"
