@@ -9,6 +9,7 @@ cask 'skype'
 cask 'slack'
 cask 'transmission'
 cask 'vlc'
+cask 'whichspace'
 cask 'zoomus'
 
 brew 'mas'
