@@ -114,6 +114,15 @@
             "appdir": "/Applications"
           }
         }
+      },
+      "whichspace": {
+        "version": "0.2.4",
+        "options": {
+          "full_name": "whichspace",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
       }
     },
     "brew": {
@@ -143,7 +152,7 @@
       "1Password": null,
       "Amphetamine": {
         "id": "937984704",
-        "version": "4.2"
+        "version": "5.0"
       },
       "Keynote": {
         "id": "409183694",
@@ -172,7 +181,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.6",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "b50ad3f08f97daedd394171d0399e5382e528677",
+        "Homebrew/homebrew-core": "c46de3ae83e3ad160504cd324d0983258b9da7a2",
         "CLT": "11.3.1.0.1.1576735732",
         "Xcode": "11.3",
         "macOS": "10.15.3"
