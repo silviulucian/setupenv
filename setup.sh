@@ -73,7 +73,7 @@ else
   echo "NVM and Node.js installed"
 fi
 
-yarn global add @vue/cli json-server hasura-cli
+yarn global add @vue/cli json-server git-run hasura-cli
 
 yarn global upgrade
 
