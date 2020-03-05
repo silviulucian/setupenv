@@ -1,6 +1,6 @@
 ### Project ###
-dotfiles/*
-secrets/*
+dotfiles/
+secrets/
 
 ### Linux ###
 *~
