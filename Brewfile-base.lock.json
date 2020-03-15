@@ -36,7 +36,7 @@
         }
       },
       "google-chrome": {
-        "version": "78.0.3904.108",
+        "version": "80.0.3987.132",
         "options": {
           "full_name": "google-chrome",
           "args": {
@@ -45,7 +45,7 @@
         }
       },
       "keyboard-maestro": {
-        "version": "9.0.4",
+        "version": "9.0.5",
         "options": {
           "full_name": "keyboard-maestro",
           "args": {
@@ -54,7 +54,7 @@
         }
       },
       "skype": {
-        "version": "8.54.0.91",
+        "version": "8.57.0.116",
         "options": {
           "full_name": "skype",
           "args": {
@@ -63,7 +63,7 @@
         }
       },
       "slack": {
-        "version": "4.1.2",
+        "version": "4.3.3",
         "options": {
           "full_name": "slack",
           "args": {
@@ -90,7 +90,7 @@
         }
       },
       "zoomus": {
-        "version": "4.5.5757.1110",
+        "version": "4.6.18176.0301",
         "options": {
           "full_name": "zoomus",
           "args": {
@@ -119,6 +119,24 @@
         "version": "0.2.4",
         "options": {
           "full_name": "whichspace",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "path-finder": {
+        "version": "9.0.8",
+        "options": {
+          "full_name": "path-finder",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "logitech-options": {
+        "version": "8.10.64",
+        "options": {
+          "full_name": "logitech-options",
           "args": {
             "appdir": "/Applications"
           }
@@ -158,7 +176,10 @@
         "id": "409183694",
         "version": "9.2.1"
       },
-      "Notability": null,
+      "Notability": {
+        "id": "736189492",
+        "version": "4.2.2"
+      },
       "Numbers": {
         "id": "409203825",
         "version": "6.2.1"
@@ -171,14 +192,19 @@
         "id": "425424353",
         "version": "4.2.0"
       }
+    },
+    "tap": {
+      "homebrew/cask-drivers": {
+        "revision": "076ed037b7d3b83e043269d509180d2d915227de"
+      }
     }
   },
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.9",
+        "HOMEBREW_VERSION": "2.2.10",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0e40e1dd71bd56c3584b95ebacc548cb4a1ba8d9",
+        "Homebrew/homebrew-core": "3c812e5e723727fe7473fdbe8a5b09132fa0def8",
         "CLT": "11.3.1.0.1.1576735732",
         "Xcode": "11.3",
         "macOS": "10.15.3"

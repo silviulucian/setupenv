@@ -4,6 +4,7 @@ cask 'adobe-creative-cloud'
 cask 'fontbase'
 cask 'google-chrome'
 cask 'google-drive-file-stream'
+cask 'istat-menus'
 cask 'keyboard-maestro'
 cask 'path-finder'
 cask 'skype'
@@ -12,6 +13,9 @@ cask 'transmission'
 cask 'vlc'
 cask 'whichspace'
 cask 'zoomus'
+
+tap 'homebrew/cask-drivers'
+cask 'logitech-options'
 
 brew 'mas'
 
