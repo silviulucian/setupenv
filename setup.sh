@@ -92,6 +92,8 @@ composer global require \
 
 composer global upgrade
 
+pecl install redis
+
 # Install Powerline fonts
 if [[ ! -f "$HOME/Library/Fonts/Ubuntu Mono derivative Powerline.ttf" ]]; then
   echo "Installing Powerline fonts"
