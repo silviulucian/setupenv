@@ -1,5 +1,6 @@
 brew 'ack'
 brew 'awscli'
+brew 'cowsay'
 brew 'direnv'
 brew 'fish'
 brew 'git'
@@ -21,6 +22,7 @@ brew 'pkenv'
 tap 'TomAnthony/brews'
 brew 'itermocil'
 
+tap 'homebrew/cask-versions'
 cask_args appdir: '/Applications'
 
 cask 'dash'
@@ -32,9 +34,6 @@ cask 'sublime-merge'
 cask 'sublime-text'
 cask 'tableplus'
 cask 'transmit'
-
-tap 'homebrew/cask-versions'
-cask 'firefox'
 
 brew 'mas'
 mas 'MCG', id: 799178412

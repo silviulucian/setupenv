@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 cask 'adobe-creative-cloud'
+cask 'firefox-developer-edition'
 cask 'fontbase'
 cask 'google-chrome'
 cask 'google-drive-file-stream'
@@ -22,6 +23,7 @@ brew 'mas'
 mas '1Password', id: 1333542190
 mas 'Amphetamine', id: 937984704
 mas 'Keynote', id: 409183694
+mas 'Noizio', id: 928871589
 mas 'Notability', id: 736189492
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
