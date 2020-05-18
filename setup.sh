@@ -73,7 +73,7 @@ else
   echo "NVM and Node.js installed"
 fi
 
-yarn global add @vue/cli json-server git-run hasura-cli
+yarn global add @vue/cli json-server git-run list-repos hasura-cli
 
 yarn global upgrade
 
@@ -92,7 +92,7 @@ composer global require \
 
 composer global upgrade
 
-pecl install redis
+pecl install redis yaml
 
 # Install Powerline fonts
 if [[ ! -f "$HOME/Library/Fonts/Ubuntu Mono derivative Powerline.ttf" ]]; then
