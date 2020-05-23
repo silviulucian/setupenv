@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -eux;
+
 if [[ "$OSTYPE" != "darwin"* ]]; then
   echo "This doesn't seem to be macOS"
   exit 1
