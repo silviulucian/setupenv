@@ -25,7 +25,6 @@ brew 'itermocil'
 tap 'homebrew/cask-versions'
 cask_args appdir: '/Applications'
 
-cask 'dash'
 cask 'insomnia'
 cask 'iterm2'
 cask 'kaleidoscope'
