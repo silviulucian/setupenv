@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #
 # Sync dotfiles and secrets
+#------------------------------------------------------------------------------
+
 repos=( dotfiles secrets )
 for repo in "${repos[@]}"
 do

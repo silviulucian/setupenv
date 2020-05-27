@@ -1,0 +1,63 @@
+#
+# Shell apps
+#------------------------------------------------------------------------------
+
+brew 'awscli'
+brew 'git'
+brew 'git-lfs'
+brew 'jq'
+brew 'ncdu'
+brew 'p7zip'
+brew 'php'
+brew 'rsync'
+brew 'tfenv'
+brew 'vim'
+
+#
+# Appstore
+#------------------------------------------------------------------------------
+
+brew 'mas'
+
+mas '1Password', id: 1333542190
+mas 'Noizio', id: 928871589
+
+#
+# Cask
+#------------------------------------------------------------------------------
+
+tap 'homebrew/cask-versions'
+cask_args appdir: '/Applications'
+
+# Drivers
+
+tap 'homebrew/cask-drivers'
+cask 'logitech-options'
+
+# Utils
+
+cask 'alfred'
+cask 'google-chrome'
+cask 'the-unarchiver'
+
+# Communication
+
+cask 'skype'
+cask 'slack'
+cask 'zoomus'
+
+# Dev
+
+cask 'coteditor'
+cask 'lando'
+cask 'phpstorm'
+cask 'transmit'
+
+# Design
+
+# ...
+
+# Work
+
+cask 'adobe-acrobat-pro'
+cask 'microsoft-office'

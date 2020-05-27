@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eux;
+set -x;
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
   echo "This doesn't seem to be macOS"
@@ -31,12 +31,25 @@ echo "Xcode tools installed"
 
 
 #
+# Install Oh My Zsh
+#------------------------------------------------------------------------------
+
+if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+  echo "Installing Oh My Zsh"
+
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "Oh My Zsh installed"
+fi
+
+
+#
 # Install Homebrew
 #------------------------------------------------------------------------------
 
 if [[ ! -x "$(command -v brew)" ]]; then
   echo "Installing Homebrew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
   echo "Homebrew installed"
   brew update
@@ -45,24 +58,16 @@ fi
 
 
 #
-# Install base set of apps
+# Install apps
 #------------------------------------------------------------------------------
 
-brew bundle --file=Brewfile-base
-[[ ! -d "/Applications/Adobe Creative Cloud" ]] && open -a "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
+brew bundle --file=Brewfile
 
-
-#
-# Install dev apps
-#------------------------------------------------------------------------------
-
-brew bundle --file=Brewfile-dev
-
-# Install NVM, Node.js and packages
+# Install NVM and Node.js
 if [[ ! -d "$HOME/.nvm" ]]; then
   echo "Installing NVM and Node.js"
 
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
   export NVM_DIR="$HOME/.nvm"
   export PATH="$NVM_DIR/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -71,15 +76,25 @@ if [[ ! -d "$HOME/.nvm" ]]; then
   nvm install 12
   nvm alias default 12
   curl -o- -L https://yarnpkg.com/install.sh | bash
-else
+elseasdf
   echo "NVM and Node.js installed"
 fi
 
-yarn global add @vue/cli json-server git-run list-repos hasura-cli
+# Node.js packages
+yarn global add \
+  @vue/cli \
+  list-repos \
+  git-run \
+  hasura-cli
 
 yarn global upgrade
 
-# Install Composer and packages
+# Install PHP extensions
+pecl install \
+  redis
+  yaml
+
+# Install Composer
 if [[ ! -f /usr/local/bin/composer ]]; then
   echo "Installing Composer"
   curl -sS https://getcomposer.org/installer | php
@@ -88,36 +103,17 @@ else
   echo "Composer installed"
 fi
 
+# Composer packages
 composer global require \
   laravel/installer \
   laravel/vapor-cli
 
 composer global upgrade
 
-pecl install redis yaml
 
-# Install Powerline fonts
-if [[ ! -f "$HOME/Library/Fonts/Ubuntu Mono derivative Powerline.ttf" ]]; then
-  echo "Installing Powerline fonts"
-
-  git clone https://github.com/powerline/fonts.git --depth=1
-  cd fonts
-  ./install.sh
-  cd ..
-  rm -rf fonts
-else
-  echo "Powerline fonts installed"
-fi
-
-# Make Fish the default shell
-if ! grep -q "fish" "/etc/shells"; then
-  echo "Making Fish the default shell"
-
-  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-  chsh -s `which fish`
-else
-  echo "Fish is already the default shell"
-fi
+#
+# Sync dotfiles
+#------------------------------------------------------------------------------
 
 source sync-dotfiles.sh
 

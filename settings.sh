@@ -15,17 +15,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
 #
-# Setup iTerm2
-###############################################################################
-
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Apps/iTerm2"
-
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
-
-#
 # Setup Google Chrome (including Canary)
 ###############################################################################
 
