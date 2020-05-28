@@ -16,6 +16,7 @@ brew 'mas'
 
 mas '1Password', id: 1333542190
 mas 'Noizio', id: 928871589
+mas 'Final Cut Pro', id: 424389933
 
 #
 # Cask
