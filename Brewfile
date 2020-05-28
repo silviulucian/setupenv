@@ -2,14 +2,9 @@
 # Shell apps
 #------------------------------------------------------------------------------
 
-brew 'awscli'
 brew 'git'
 brew 'git-lfs'
-brew 'jq'
-brew 'ncdu'
-brew 'p7zip'
 brew 'php'
-brew 'rsync'
 brew 'tfenv'
 brew 'vim'
 
