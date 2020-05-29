@@ -38,7 +38,6 @@ cask 'the-unarchiver'
 
 # Communication
 
-cask 'skype'
 cask 'slack'
 cask 'zoomus'
 
