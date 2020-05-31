@@ -38,6 +38,7 @@ cask 'the-unarchiver'
 
 # Communication
 
+cask 'microsoft-teams'
 cask 'slack'
 cask 'zoomus'
 
