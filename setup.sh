@@ -84,8 +84,7 @@ fi
 yarn global add \
   @vue/cli \
   list-repos \
-  git-run \
-  hasura-cli
+  git-run
 
 yarn global upgrade
 
