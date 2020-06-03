@@ -45,10 +45,10 @@ cask 'zoomus'
 
 # Dev
 
-cask 'coteditor'
 cask 'lando'
 cask 'phpstorm'
 cask 'transmit'
+cask 'visual-studio-code'
 
 # Design
 
