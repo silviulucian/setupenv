@@ -45,6 +45,7 @@ cask 'zoomus'
 
 # Dev
 
+cask 'bootstrap-studio'
 cask 'lando'
 cask 'phpstorm'
 cask 'transmit'
