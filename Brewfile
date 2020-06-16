@@ -37,6 +37,7 @@ cask 'alfred'
 cask 'google-chrome'
 cask 'istat-menus'
 cask 'the-unarchiver'
+cask 'transmission'
 
 # Communication
 
