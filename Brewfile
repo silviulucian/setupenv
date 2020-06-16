@@ -35,6 +35,7 @@ cask 'logitech-options'
 
 cask 'alfred'
 cask 'google-chrome'
+cask 'istat-menus'
 cask 'the-unarchiver'
 
 # Communication
