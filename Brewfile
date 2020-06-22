@@ -15,6 +15,7 @@ brew 'vim'
 
 brew 'mas'
 
+mas 'Amphetamine', id: 937984704
 mas '1Password', id: 1333542190
 mas 'Noizio', id: 928871589
 mas 'Final Cut Pro', id: 424389933
