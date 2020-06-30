@@ -15,10 +15,12 @@ brew 'vim'
 
 brew 'mas'
 
-mas 'Amphetamine', id: 937984704
 mas '1Password', id: 1333542190
-mas 'Noizio', id: 928871589
+mas 'Amphetamine', id: 937984704
 mas 'Final Cut Pro', id: 424389933
+mas 'Messenger', id: 1480068668
+mas 'Noizio', id: 928871589
+mas 'WhatsApp', id: 1147396723
 
 #
 # Cask
