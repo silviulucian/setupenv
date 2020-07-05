@@ -1,8 +1,9 @@
 #
-# Shell apps
+# CLI Tools
 #------------------------------------------------------------------------------
 
 brew 'ack'
+brew 'aws'
 brew 'git'
 brew 'git-lfs'
 brew 'php'
@@ -10,7 +11,7 @@ brew 'tfenv'
 brew 'vim'
 
 #
-# Appstore
+# App Store
 #------------------------------------------------------------------------------
 
 brew 'mas'
@@ -54,8 +55,8 @@ cask 'bootstrap-studio'
 cask 'firefox-developer-edition'
 cask 'lando'
 cask 'phpstorm'
+cask 'sublime-text'
 cask 'transmit'
-cask 'visual-studio-code'
 
 # Design
 
