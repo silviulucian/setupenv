@@ -37,21 +37,31 @@ cask_args appdir: '/Applications'
 tap 'homebrew/cask-drivers'
 cask 'logitech-options'
 
-# Utils
+# General Apps
 
 cask 'alfred'
 cask 'google-chrome'
 cask 'istat-menus'
+cask 'iterm2'
 cask 'the-unarchiver'
 cask 'transmission'
 
-# Communication
+# Work apps
+
+cask 'adobe-acrobat-pro'
+cask 'microsoft-office'
+
+# Communication apps
 
 cask 'microsoft-teams'
 cask 'slack'
 cask 'zoomus'
 
-# Dev
+# Design apps
+
+# ...
+
+# Dev-related apps
 
 cask 'bootstrap-studio'
 cask 'firefox-developer-edition'
@@ -59,12 +69,3 @@ cask 'lando'
 cask 'phpstorm'
 cask 'sublime-text'
 cask 'transmit'
-
-# Design
-
-# ...
-
-# Work
-
-cask 'adobe-acrobat-pro'
-cask 'microsoft-office'
