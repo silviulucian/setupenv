@@ -18,7 +18,9 @@ brew 'mas'
 
 mas '1Password', id: 1333542190
 mas 'Amphetamine', id: 937984704
+mas 'Divvy', id: 413857545
 mas 'Final Cut Pro', id: 424389933
+mas 'Magnet', id: 441258766
 mas 'Messenger', id: 1480068668
 mas 'Noizio', id: 928871589
 mas 'WhatsApp', id: 1147396723
