@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------
 
 brew 'ack'
-brew 'aws'
+brew 'awscli'
 brew 'git'
 brew 'git-lfs'
 brew 'php'

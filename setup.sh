@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x;
+#set -x;
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
   echo "This doesn't seem to be macOS"
@@ -61,7 +61,7 @@ fi
 # Install apps
 #------------------------------------------------------------------------------
 
-brew bundle --file=Brewfile
+brew bundle
 
 # Install NVM and Node.js
 if [[ ! -d "$HOME/.nvm" ]]; then
@@ -76,7 +76,7 @@ if [[ ! -d "$HOME/.nvm" ]]; then
   nvm install 12
   nvm alias default 12
   curl -o- -L https://yarnpkg.com/install.sh | bash
-elseasdf
+else
   echo "NVM and Node.js installed"
 fi
 
@@ -90,8 +90,9 @@ yarn global upgrade
 
 # Install PHP extensions
 pecl install \
-  redis
-  yaml
+  redis \
+  yaml \
+  zip
 
 # Install Composer
 if [[ ! -f /usr/local/bin/composer ]]; then
