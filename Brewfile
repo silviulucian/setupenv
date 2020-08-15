@@ -9,6 +9,7 @@ brew 'git-lfs'
 brew 'php'
 brew 'tfenv'
 brew 'vim'
+brew 'mysql' # Comes with mysqldump
 
 #
 # App Store
