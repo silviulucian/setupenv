@@ -51,6 +51,7 @@ cask 'transmission'
 # Work apps
 
 cask 'adobe-acrobat-pro'
+cask 'dropbox'
 cask 'microsoft-office'
 
 # Communication apps
