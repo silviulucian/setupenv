@@ -66,6 +66,7 @@ cask 'zoomus'
 # Dev-related apps
 
 cask 'bootstrap-studio'
+cask 'dash'
 cask 'firefox-developer-edition'
 cask 'lando'
 cask 'phpstorm'
