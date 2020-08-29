@@ -4,12 +4,14 @@
 
 brew 'ack'
 brew 'awscli'
+brew 'azure-cli'
 brew 'git'
 brew 'git-lfs'
+brew 'kubernetes-cli'
+brew 'mysql' # Comes with mysqldump
 brew 'php'
 brew 'tfenv'
 brew 'vim'
-brew 'mysql' # Comes with mysqldump
 
 #
 # App Store
@@ -45,6 +47,7 @@ cask 'alfred'
 cask 'google-chrome'
 cask 'istat-menus'
 cask 'iterm2'
+cask 'path-finder'
 cask 'the-unarchiver'
 cask 'transmission'
 
