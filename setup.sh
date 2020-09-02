@@ -83,8 +83,7 @@ fi
 # Node.js packages
 yarn global add \
   @vue/cli \
-  list-repos \
-  git-run
+  list-repos
 
 yarn global upgrade
 
@@ -105,8 +104,7 @@ fi
 
 # Composer packages
 composer global require \
-  laravel/installer \
-  laravel/vapor-cli
+  laravel/installer
 
 composer global upgrade
 

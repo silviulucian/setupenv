@@ -5,13 +5,19 @@
 brew 'ack'
 brew 'awscli'
 brew 'azure-cli'
+brew 'fzf'
 brew 'git'
 brew 'git-lfs'
+brew 'kubectx'
 brew 'kubernetes-cli'
 brew 'mysql' # Comes with mysqldump
 brew 'php'
 brew 'tfenv'
 brew 'vim'
+brew 'wget'
+
+tap 'jenkins-x/jx'
+brew 'jenkins-x/jx/jx'
 
 #
 # App Store
