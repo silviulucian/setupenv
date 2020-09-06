@@ -32,6 +32,7 @@ mas 'Final Cut Pro', id: 424389933
 mas 'Magnet', id: 441258766
 mas 'Messenger', id: 1480068668
 mas 'Noizio', id: 928871589
+mas 'Notability', id: 736189492
 mas 'Remote Desktop', id: 409907375
 mas 'WhatsApp', id: 1147396723
 
