@@ -19,3 +19,5 @@ done
 # Fix SSH permissions
 chmod 400 ~/.ssh/*
 chmod 600 ~/.ssh/config ~/.ssh/known_hosts
+
+ssh-add # Add identity files to agent
