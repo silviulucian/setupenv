@@ -49,7 +49,7 @@ fi
 
 if [[ ! -x "$(command -v brew)" ]]; then
   echo "Installing Homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo "Homebrew installed"
   brew update
@@ -67,18 +67,18 @@ brew bundle
 if [[ ! -d "$HOME/.nvm" ]]; then
   echo "Installing NVM and Node.js"
 
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
   export NVM_DIR="$HOME/.nvm"
   export PATH="$NVM_DIR/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
   [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 
-  nvm install 12
-  nvm alias default 12
+  nvm install 14
+  nvm alias default 14
   curl -o- -L https://yarnpkg.com/install.sh | bash
 else
   echo "NVM and Node.js installed"
-fi
+fi	
 
 # Node.js packages
 yarn global add \
@@ -87,16 +87,21 @@ yarn global add \
 
 yarn global upgrade
 
+# Install PHP 7.4 (already installed via Brewfile above)
+# brew install php@7.4
+
 # Install PHP extensions
-pecl install \
-  redis \
-  yaml \
-  zip
+# pecl install \
+#   redis \
+#   yaml \
+#   zip
 
 # Install Composer
 if [[ ! -f /usr/local/bin/composer ]]; then
   echo "Installing Composer"
-  curl -sS https://getcomposer.org/installer | php
+  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  php composer-setup.php
+  php -r "unlink('composer-setup.php');"
   mv composer.phar /usr/local/bin/composer
 else
   echo "Composer installed"
