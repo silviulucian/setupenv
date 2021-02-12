@@ -16,6 +16,8 @@ brew 'tfenv'
 brew 'vim'
 brew 'wget'
 
+brew 'gitlab-runner'
+
 tap 'jenkins-x/jx'
 brew 'jenkins-x/jx/jx'
 
@@ -25,16 +27,20 @@ brew 'jenkins-x/jx/jx'
 
 brew 'mas'
 
-mas '1Password', id: 1333542190
+mas '1Blocker', id: 1107421413
+mas '1Password 7', id: 1333542190
 mas 'Amphetamine', id: 937984704
+mas 'Commander One', id: 1035236694
 mas 'Divvy', id: 413857545
-mas 'Final Cut Pro', id: 424389933
+mas 'Fantastical', id: 975937182
+mas 'Hush', id: 1544743900
 mas 'Magnet', id: 441258766
-mas 'Messenger', id: 1480068668
 mas 'Noizio', id: 928871589
 mas 'Notability', id: 736189492
+mas 'PiPifier', id: 1160374471
 mas 'Remote Desktop', id: 409907375
-mas 'WhatsApp', id: 1147396723
+mas 'Telegram', id: 747648890
+mas 'Trello', id: 1278508951
 
 #
 # Cask
@@ -50,36 +56,26 @@ cask 'logitech-options'
 
 # General Apps
 
-cask 'alfred'
-cask 'google-chrome'
 cask 'istat-menus'
 cask 'iterm2'
-cask 'path-finder'
 cask 'the-unarchiver'
-cask 'transmission'
 
-# Work apps
+# Office apps
 
 cask 'adobe-acrobat-pro'
-cask 'dropbox'
 cask 'microsoft-office'
-
-# Communication apps
-
-cask 'microsoft-teams'
 cask 'slack'
 cask 'zoomus'
+cask 'basecamp'
+cask 'hey'
 
-# Design apps
+# Dev apps
 
-# ...
-
-# Dev-related apps
-
-cask 'bootstrap-studio'
 cask 'dash'
 cask 'firefox-developer-edition'
+cask 'google-chrome'
 cask 'lando'
 cask 'phpstorm'
+cask 'sublime-merge'
 cask 'sublime-text'
 cask 'transmit'
