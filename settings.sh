@@ -8,21 +8,19 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
 #
+# Enable hybernate
+#------------------------------------------------------------------------------
+
+# sudo pmset -a hibernatemode 25
+# sudo pmset -a standbydelay 1 # Amount of time to wait in normal sleep before hybernating
+# sudo pmset -a standby 1
+
+
+#
 # Setup symlinks
 ###############################################################################
 
 [[ ! -e "$HOME/iCloud" ]] && ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/" "$HOME/iCloud"
-
-
-#
-# Setup iTerm2
-###############################################################################
-
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Apps/iTerm2"
-
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 
 #
