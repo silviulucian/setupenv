@@ -63,11 +63,11 @@ cask 'the-unarchiver'
 # Office apps
 
 cask 'adobe-acrobat-pro'
+cask 'basecamp'
+cask 'hey'
 cask 'microsoft-office'
 cask 'slack'
 cask 'zoomus'
-cask 'basecamp'
-cask 'hey'
 
 # Dev apps
 
