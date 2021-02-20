@@ -15,15 +15,16 @@ git pull origin master
 
 
 #
-# Install Xcode tools
+# Install Xcode tools & Rosetta 2
 #------------------------------------------------------------------------------
 
 check=$((xcode-\select --install) 2>&1)
 str="xcode-select: note: install requested for command line developer tools"
-[[ "$check" == "$str" ]] && echo "Installing Xcode tools"
+[[ "$check" == "$str" ]] && echo "Installing Xcode tools and Rosetta 2"
 while [[ "$check" == "$str" ]];
 do
   sleep 1
+  sudo softwareupdate --install-rosetta
   check=$((xcode-\select --install) 2>&1)
 done
 
