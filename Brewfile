@@ -57,7 +57,7 @@ cask_args appdir: '/Applications'
 # General Apps
 
 # cask 'istat-menus'
-cask 'iterm2'
+# cask 'iterm2'
 cask 'the-unarchiver'
 
 # Office apps
@@ -68,7 +68,7 @@ cask 'hey'
 cask 'microsoft-office'
 cask 'slack'
 cask 'webex-meetings'
-cask 'zoomus'
+cask 'zoom'
 
 # Dev apps
 
