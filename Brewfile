@@ -13,7 +13,7 @@ brew 'git-lfs'
 # brew 'mysql' # Comes with mysqldump
 # brew 'php'
 # brew 'tfenv'
-# brew 'vim'
+brew 'vim'
 # brew 'wget'
 
 # brew 'gitlab-runner'
