@@ -21,6 +21,9 @@ brew 'vim'
 # tap 'jenkins-x/jx'
 # brew 'jenkins-x/jx/jx'
 
+tap 'mutagen-io/mutagen'
+brew 'mutagen'
+
 #
 # App Store
 #------------------------------------------------------------------------------
