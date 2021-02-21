@@ -83,8 +83,9 @@ fi
 
 # Node.js packages
 yarn global add \
-  @vue/cli \
+  nativefier \
   list-repos
+  # @vue/cli \
 
 yarn global upgrade
 
