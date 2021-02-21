@@ -29,7 +29,7 @@ brew 'mas'
 
 mas '1Blocker', id: 1107421413
 mas '1Password 7', id: 1333542190
-# mas 'Amphetamine', id: 937984704
+mas 'Amphetamine', id: 937984704
 # mas 'Commander One', id: 1035236694
 # mas 'Divvy', id: 413857545
 mas 'Fantastical', id: 975937182
