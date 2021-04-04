@@ -83,14 +83,13 @@ fi
 
 # Node.js packages
 yarn global add \
-  nativefier \
   list-repos
   # @vue/cli \
 
 yarn global upgrade
 
-# Install PHP 7.4 (already installed via Brewfile above)
-# brew install php@7.4
+# Install PHP 7.4
+brew install php@7.4
 
 # Install PHP extensions
 # pecl install \
@@ -99,15 +98,15 @@ yarn global upgrade
 #   zip
 
 # Install Composer
-if [[ ! -f /usr/local/bin/composer ]]; then
-  echo "Installing Composer"
-  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-  php composer-setup.php
-  php -r "unlink('composer-setup.php');"
-  mv composer.phar /usr/local/bin/composer
-else
-  echo "Composer installed"
-fi
+# if [[ ! -f /usr/local/bin/composer ]]; then
+#   echo "Installing Composer"
+#   php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+#   php composer-setup.php
+#   php -r "unlink('composer-setup.php');"
+#   mv composer.phar /usr/local/bin/composer
+# else
+#   echo "Composer installed"
+# fi
 
 # Composer packages
 composer global require \

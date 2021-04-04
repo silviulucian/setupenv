@@ -1,5 +1,6 @@
 .git/
 .githooks/
+.ssh/**/
 dotfiles/
 secrets/
 .AppleDouble
@@ -12,6 +13,7 @@ CONTRIBUTING*
 ehthumbs.db
 ehthumbs_vista.db
 LICENSE*
+mutagen.sh
 README*
 secrets.sh
 settings.sh
