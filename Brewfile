@@ -35,6 +35,7 @@ mas 'Microsoft OneNote', id: 784801555
 mas 'Microsoft Outlook', id: 985367838
 mas 'Microsoft PowerPoint', id: 462062816
 mas 'Microsoft Word', id: 462054704
+mas 'OneDrive', id: 823766827
 
 #
 # Cask

@@ -289,7 +289,7 @@
         }
       },
       "fzf": {
-        "version": "0.26.0",
+        "version": "0.27.0",
         "bottle": {
           "rebuild": 0,
           "cellar": ":any_skip_relocation",
@@ -297,20 +297,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/fzf-0.26.0.arm64_big_sur.bottle.tar.gz",
-              "sha256": "c6301bb126f9d1d0858408ed428a368a95d61b65e310a9083cca3be66ec9aeac"
+              "url": "https://homebrew.bintray.com/bottles/fzf-0.27.0.arm64_big_sur.bottle.tar.gz",
+              "sha256": "ccc3f270e04389a9cc44d37c8d91a2b7cea3eba1d43c37e89a6cabc66898e2bc"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/fzf-0.26.0.big_sur.bottle.tar.gz",
-              "sha256": "b711f6a7672111cfe55bdf2ff56182eece3362a34745700bf37082e6fdc43e46"
+              "url": "https://homebrew.bintray.com/bottles/fzf-0.27.0.big_sur.bottle.tar.gz",
+              "sha256": "7b0ca0f1f3bfbdfa55c4d7b7f0c3e11b07dd52db46f1862b54b742761c59c0e3"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/fzf-0.26.0.catalina.bottle.tar.gz",
-              "sha256": "99d6ed82769c08f345b286a676d6354b5a983699773b3c0878726291d093ceb3"
+              "url": "https://homebrew.bintray.com/bottles/fzf-0.27.0.catalina.bottle.tar.gz",
+              "sha256": "6a204ecb17beb7375a73569dba8c6ea1a097fa16a42b38a8fa456d205d107e7b"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/fzf-0.26.0.mojave.bottle.tar.gz",
-              "sha256": "ed36a1cfa7de25cbeb08b9fa37c1d6663dfa22218e65843dd1530605ba37d04b"
+              "url": "https://homebrew.bintray.com/bottles/fzf-0.27.0.mojave.bottle.tar.gz",
+              "sha256": "398c27f1750bec0973e9763b56194779915c2428fc6f7506392b2d30e16edb15"
             }
           }
         }
@@ -460,7 +460,7 @@
       },
       "Amphetamine": {
         "id": "937984704",
-        "version": "5.1.1"
+        "version": "5.2"
       },
       "Divvy": {
         "id": "413857545",
@@ -541,11 +541,15 @@
       "Microsoft Outlook": {
         "id": "985367838",
         "version": "16.47"
+      },
+      "OneDrive": {
+        "id": "823766827",
+        "version": "21.052.0314"
       }
     },
     "tap": {
       "homebrew/cask-versions": {
-        "revision": "2ff2ac796e183f862cfc3f1904b9dd2c59fac5f5"
+        "revision": "f3c70c1fd0cf790128c25615673f2b057b24ee83"
       },
       "homebrew/cask-drivers": {
         "revision": "35dd8666c995a064777ac65a40928bf018374fc6"
@@ -577,7 +581,7 @@
         }
       },
       "google-chrome": {
-        "version": "89.0.4389.114,4389.114",
+        "version": "89.0.4389.114",
         "options": {
           "full_name": "google-chrome",
           "args": {
@@ -820,9 +824,18 @@
         }
       },
       "microsoft-edge": {
-        "version": "89.0.774.63",
+        "version": "89.0.774.68",
         "options": {
           "full_name": "microsoft-edge",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "sublime-merge": {
+        "version": "2049",
+        "options": {
+          "full_name": "sublime-merge",
           "args": {
             "appdir": "/Applications"
           }
@@ -841,9 +854,9 @@
         "macOS": "10.15.7"
       },
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.10",
+        "HOMEBREW_VERSION": "3.0.11",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "78b5a005124695f6650a286490a4dae3df790c16",
+        "Homebrew/homebrew-core": "4dffd6ddcfe0cd91f84bf5d53998b8999b3499ab",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.0",
         "macOS": "11.2.3"
