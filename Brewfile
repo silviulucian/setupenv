@@ -2,11 +2,12 @@
 # CLI Tools
 #------------------------------------------------------------------------------
 
+brew 'commitizen'
 brew 'fzf'
 brew 'git'
 brew 'git-lfs'
-brew 'ncdu'
 brew 'mysql' # Installing for 'mysqldump'
+brew 'ncdu'
 brew 'postgresql' # Installing for 'pg_dump'
 brew 'wget'
 
@@ -29,6 +30,7 @@ mas 'Noizio', id: 928871589
 mas 'PiPifier', id: 1160374471
 mas 'Telegram', id: 747648890
 mas 'Trello', id: 1278508951
+mas 'TweetDeck', id: 485812721
 
 mas 'Microsoft Excel', id: 462058435
 mas 'Microsoft OneNote', id: 784801555
@@ -45,19 +47,17 @@ tap 'homebrew/cask-versions'
 cask_args appdir: '/Applications'
 
 # Drivers
-
-# tap 'homebrew/cask-drivers'
-# cask 'logitech-options'
+tap 'homebrew/cask-drivers'
+cask 'logitech-options'
 
 # Utils
-
 cask 'istat-menus'
 cask 'marta'
+cask 'openvpn-connect'
 cask 'the-unarchiver'
 cask 'transmit'
 
 # Work
-
 cask 'adobe-acrobat-pro'
 cask 'basecamp'
 cask 'hey'
@@ -71,7 +71,6 @@ cask 'google-chrome'
 cask 'microsoft-edge'
 
 # Dev apps
-
-# cask 'phpstorm'
+cask 'phpstorm'
 cask 'sublime-merge'
 cask 'sublime-text'
